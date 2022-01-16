@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>xoxo_findById</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>이메일</th>
+        <th>비번</th>
+        <th>이름</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${member.memberId}">번호</td>
+        <td th:text="${member.memberEmail}">메일</td>
+        <td th:text="${member.memberPassword}">비번</td>
+        <td th:text="${member.memberName}">이름</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
